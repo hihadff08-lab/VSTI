@@ -1,1 +1,361 @@
 
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<title>معرض الأشياء الرائعة</title>
+
+<style>
+
+body{
+margin:0;
+font-family:tahoma;
+background:linear-gradient(135deg,#000428,#004e92);
+color:white;
+}
+
+
+h1{
+text-align:center;
+font-size:45px;
+animation:title 2s infinite alternate;
+}
+
+
+@keyframes title{
+from{transform:scale(1);}
+to{transform:scale(1.1);}
+}
+
+
+
+h2.section{
+text-align:center;
+background:#111;
+padding:15px;
+margin-top:40px;
+border-radius:30px;
+}
+
+
+
+.container{
+
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+padding:20px;
+
+}
+
+
+
+.card{
+
+width:300px;
+background:white;
+color:black;
+border-radius:25px;
+overflow:hidden;
+box-shadow:0 0 25px black;
+transition:.5s;
+animation:show 1s;
+
+}
+
+
+
+.card:hover{
+
+transform:translateY(-15px) scale(1.05);
+
+}
+
+
+
+@keyframes show{
+
+from{
+opacity:0;
+transform:translateY(100px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+
+
+.card img{
+
+width:100%;
+height:200px;
+object-fit:cover;
+animation:image 4s infinite alternate;
+
+}
+
+
+
+@keyframes image{
+
+from{
+transform:scale(1);
+}
+
+to{
+transform:scale(1.1);
+}
+
+}
+
+
+
+.info{
+
+padding:15px;
+
+}
+
+
+
+.price{
+
+color:green;
+font-weight:bold;
+
+}
+
+
+.speed{
+
+color:red;
+font-weight:bold;
+
+}
+
+
+
+.stars{
+
+color:orange;
+font-size:25px;
+
+}
+
+
+
+button{
+
+width:100%;
+padding:12px;
+border:0;
+border-radius:20px;
+background:#004e92;
+color:white;
+font-size:18px;
+
+}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<h1>🔥 معرض الأشياء الرائعة 🔥</h1>
+
+
+
+<!-- السيارات -->
+
+<h2 class="section">🚗 السيارات</h2>
+
+
+<div class="container">
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70">
+
+<div class="info">
+
+<h2>بورش 911</h2>
+
+<p class="price">💰 25000000 دج</p>
+
+<p class="speed">⚡ 320 كم/سا</p>
+
+<div class="stars">⭐⭐⭐⭐⭐</div>
+
+<button>سيارة رائعة</button>
+
+</div>
+</div>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1542362567-b07e54358753">
+
+<div class="info">
+
+<h2>لامبورغيني</h2>
+
+<p class="price">💰 70000000 دج</p>
+
+<p class="speed">⚡ 350 كم/سا</p>
+
+<div class="stars">⭐⭐⭐⭐⭐</div>
+
+<button>سيارة خارقة</button>
+
+</div>
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- الدراجات -->
+
+<h2 class="section">🏍️ الدراجات النارية</h2>
+
+
+<div class="container">
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39">
+
+<div class="info">
+
+<h2>BMW Motorrad</h2>
+
+<p class="price">💰 6000000 دج</p>
+
+<p class="speed">⚡ 300 كم/سا</p>
+
+<div class="stars">⭐⭐⭐⭐⭐</div>
+
+<button>دراجة قوية</button>
+
+</div>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64">
+
+<div class="info">
+
+<h2>ياماها R1</h2>
+
+<p class="price">💰 4500000 دج</p>
+
+<p class="speed">⚡ 299 كم/سا</p>
+
+<div class="stars">⭐⭐⭐⭐</div>
+
+<button>سريعة جدا</button>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- الهواتف -->
+
+
+<h2 class="section">📱 الهواتف</h2>
+
+
+<div class="container">
+
+
+<div class="card">
+
+
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
+
+
+<div class="info">
+
+<h2>هاتف Pro Max</h2>
+
+<p class="price">💰 250000 دج</p>
+
+<p>📸 كاميرا 48MP</p>
+
+<p>⚡ ذاكرة 256GB</p>
+
+<div class="stars">⭐⭐⭐⭐⭐</div>
+
+<button>هاتف ممتاز</button>
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97">
+
+
+<div class="info">
+
+<h2>هاتف Galaxy</h2>
+
+<p class="price">💰 180000 دج</p>
+
+<p>📸 كاميرا احترافية</p>
+
+<p>⚡ شاشة AMOLED</p>
+
+<div class="stars">⭐⭐⭐⭐</div>
+
+<button>اختيار رائع</button>
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>
